@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ProjekatIspit</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="odustani">Odustani</string>
+    <string name="sacuvaj">Sacuvaj</string>
+    <string name="search_title_content">Search(Title/Content)</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

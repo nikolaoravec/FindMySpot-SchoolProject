@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/box"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/location_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/location_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/location_content"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_title"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/location_date"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/iw_pin"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/location_title"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_place"/>
+    <ImageView
+        android:id="@+id/iw_delete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iw_pin"
+        app:layout_constraintStart_toEndOf="@+id/location_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_delete"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.fragment.app.FragmentContainerView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".presentation.view.activities.MapsActivity"/>
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/et_content"
+        android:textAlignment="center"
+        android:hint="@string/title"/>
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_dodaj"
+        android:hint="@string/content"/>
+
+    <Button
+        android:id="@+id/btn_odustani"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_dodaj"
+        app:layout_constraintTop_toBottomOf="@+id/et_content"
+        android:text="Odustani"/>
+
+    <Button
+        android:id="@+id/btn_dodaj"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_odustani"
+        app:layout_constraintTop_toBottomOf="@+id/et_content"
+        android:text="Dodaj"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

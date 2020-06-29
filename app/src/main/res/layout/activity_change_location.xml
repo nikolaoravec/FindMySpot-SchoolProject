@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/et_title_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_content_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_title_change"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:textSize="17sp"/>
+
+    <Button
+        android:id="@+id/odustaniBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/sacuvajBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/odustani"
+        android:color="@android:color/black"
+        android:background="@android:color/darker_gray"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/sacuvajBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/odustaniBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/sacuvaj"
+        android:color="@android:color/black"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
